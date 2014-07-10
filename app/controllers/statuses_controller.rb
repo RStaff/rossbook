@@ -1,5 +1,5 @@
 class StatusesController < ApplicationController
-  before_action :set_status, only: [:show, :edit, :update, :destroy]
+  before_action :set_status, only: [:show, :edit, :update, :destroy ]
 
   # GET /statuses
   # GET /statuses.json
@@ -10,6 +10,11 @@ class StatusesController < ApplicationController
   # GET /statuses/1
   # GET /statuses/1.json
   def show
+  end
+
+#GET
+  def content
+    @content = Content.all
   end
 
   # GET /statuses/new
